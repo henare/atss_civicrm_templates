@@ -170,7 +170,7 @@
                 			<div class="clear"></div> 
                 		</div>
                 		<div class="crm-section {$form.credit_card_exp_date.name}-section">	
-							<div class="label">{$form.credit_card_exp_date.label}</div>
+							<div class="label">Expiry</div>
                 			<div class="content">{$form.credit_card_exp_date.html}</div>
                 			<div class="clear"></div> 
                 		</div>
