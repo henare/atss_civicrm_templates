@@ -39,7 +39,9 @@
                 </div>
                 <div class="crm-section {$form.billing_first_name.name}-section">
                     <div class="label">{$form.billing_first_name.label}</div>
-                    <div class="content">{$form.billing_first_name.html}</div>
+                    <div class="content">
+                        <input id="billing_first_name" class="form-text big" type="text" name="billing_first_name" autocomplete="off" maxlength="60" size="30" placeholder="First Name">
+                    </div>
                     <div class="clear"></div>
                 </div>
                 <!-- <div class="crm-section {$form.billing_middle_name.name}-section">
@@ -49,19 +51,25 @@
                 </div> -->
                 <div class="crm-section {$form.billing_last_name.name}-section">
                     <div class="label">{$form.billing_last_name.label}</div>
-                    <div class="content">{$form.billing_last_name.html}</div>
+                    <div class="content">
+                        <input id="billing_last_name" class="form-text big" type="text" name="billing_last_name" autocomplete="off" maxlength="60" size="30" placeholder="Last Name">
+                    </div>
                     <div class="clear"></div>
                 </div>
                 {assign var=n value=billing_street_address-$bltID}
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
-                    <div class="content">{$form.$n.html}</div>
+                    <div class="content">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Street Address">
+                    </div>
                     <div class="clear"></div>
                 </div>
                 {assign var=n value=billing_city-$bltID}
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
-                    <div class="content">{$form.$n.html}</div>
+                    <div class="content">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="City">
+                    </div>
                     <div class="clear"></div>
                 </div>
                 <!-- {assign var=n value=billing_country_id-$bltID}
@@ -79,7 +87,9 @@
                 {assign var=n value=billing_postal_code-$bltID}
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
-                    <div class="content">{$form.$n.html}</div>
+                    <div class="content">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
+                    </div>
                     <div class="clear"></div>
                 </div>
             </div>
