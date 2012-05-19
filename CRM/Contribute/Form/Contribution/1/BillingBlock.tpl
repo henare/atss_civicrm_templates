@@ -161,6 +161,11 @@
                 			<div class="content">{$form.credit_card_type.html}</div>
                 			<div class="clear"></div> 
                 		</div>
+                        <div class="crm-section {$form.credit_card_exp_date.name}-section">
+                            <div class="label">Expiry</div>
+                            <div class="content">{$form.credit_card_exp_date.html}</div>
+                            <div class="clear"></div>
+                        </div>
                 		<div class="crm-section {$form.cvv2.name}-section">	
 							<div class="label">{$form.cvv2.label}</div>
                 			<div class="content">
@@ -168,11 +173,6 @@
                 				<img src="{$config->resourceBase}i/mini_cvv2.gif" alt="{ts}Security Code Location on Credit Card{/ts}" style="vertical-align: text-bottom;" />
                 				<div class="description">{ts}Usually the last 3-4 digits in the signature area on the back of the card.{/ts}</div>
                 			</div>
-                			<div class="clear"></div> 
-                		</div>
-                		<div class="crm-section {$form.credit_card_exp_date.name}-section">	
-							<div class="label">Expiry</div>
-                			<div class="content">{$form.credit_card_exp_date.html}</div>
                 			<div class="clear"></div> 
                 		</div>
                     {/if}
