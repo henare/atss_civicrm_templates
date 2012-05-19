@@ -48,5 +48,21 @@
   #crm-container .medium {
     width: 100%;
   }
+  .credit_card_type-section {
+    width: 40%;
+    float: left;
+  }
+  .credit_card_exp_date-section {
+    width: 40%;
+    display: inline-block;
+  }
+  .cvv2-section {
+    width: 20%;
+    float: right;
+  }
+  #crm-container .crm-section .label, .crm-section .label {
+    width: auto;
+    padding-right: 5px;
+  }
 </style>
 {/literal}
