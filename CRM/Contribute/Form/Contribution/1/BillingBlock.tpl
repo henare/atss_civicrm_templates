@@ -60,7 +60,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">foo{$form.$n.label}</div>
                     <div class="content">
-                        {$form.$n.html}
+                        <input id="{$form.$n.name}" class="form-text big required valid" type="text" value="{$form.$n.value}" name="{$form.$n.name}" maxlength="60" size="30" placeholder="Email">
                     </div>
                     <div class="clear"></div>
                 </div>
