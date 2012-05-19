@@ -42,6 +42,9 @@
   .credit_card_number-section .label {
     display: none;
   }
+  .cvv2-section .label {
+    display: none;
+  }
   #crm-container .medium {
     width: 100%;
   }

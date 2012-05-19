@@ -169,7 +169,7 @@
                 		<div class="crm-section {$form.cvv2.name}-section">	
 							<div class="label">{$form.cvv2.label}</div>
                 			<div class="content">
-                				{$form.cvv2.html}
+                                <input id="cvv2" class="form-text" type="text" name="cvv2" autocomplete="off" maxlength="10" size="5" placeholder="CVV2">
                                 <!--
                                 <img src="{$config->resourceBase}i/mini_cvv2.gif" alt="{ts}Security Code Location on Credit Card{/ts}" style="vertical-align: text-bottom;" />
                                 <div class="description">{ts}Usually the last 3-4 digits in the signature area on the back of the card.{/ts}</div> -->
