@@ -14,5 +14,11 @@
     width: 50%;
     float: right;
   }
+  #crm-container .crm-section .content, .crm-section .content {
+    margin-left: 0%;
+  }
+  #crm-container input.big {
+    width: 100%;
+  }
 </style>
 {/literal}
