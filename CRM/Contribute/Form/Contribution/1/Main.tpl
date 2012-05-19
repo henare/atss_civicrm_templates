@@ -67,6 +67,11 @@ function clearAmountOther() {
 {if $islifetime or $ispricelifetime }
 <div id="help">You have a current Lifetime Membership which does not need top be renewed.</div> 
 {/if}
+
+{if $is_monetary}
+    {include file='CRM/Core/BillingBlock.tpl'}
+{/if}
+
 {if $priceSet && empty($useForMember)}
     <div id="priceset"> 
         <fieldset>
@@ -242,10 +247,6 @@ function clearAmountOther() {
 			</div>
     	</div>
     </fieldset>
-    {/if} 
-
-    {if $is_monetary} 
-        {include file='CRM/Core/BillingBlock.tpl'} 
     {/if} 
 
     <div class="crm-group custom_post_profile-group">
