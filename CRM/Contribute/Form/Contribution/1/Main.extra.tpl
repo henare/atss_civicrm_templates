@@ -4,9 +4,6 @@
     display: none;
   }
   #crm-container fieldset {
-    border-width: 0px;
-  }
-  #crm-container fieldset.billing_name_address-group {
     border-width: 1px;
     border-style: none none solid;
     margin: 20px 0;
