@@ -72,6 +72,20 @@ function clearAmountOther() {
     {include file='CRM/Contribute/Form/Contribution/1/BillingBlock.tpl'}
 {/if}
 
+{if $form.is_recur}
+    <div class="crm-section {$form.is_recur.name}-section">
+    <div class="content">
+      <p><strong>{$form.is_recur.html} {ts}every{/ts} &nbsp;{$form.frequency_interval.html} &nbsp; {$form.frequency_unit.html}&nbsp; {ts}for{/ts} &nbsp; {$form.installments.html} &nbsp;{$form.installments.label}</strong>
+      </p>
+      <p><span class="description">{ts}Your recurring contribution will be processed automatically for the number of installments you specify. You can leave the number of installments blank if you want to make an open-ended commitment. In either case, you can choose to cancel at any time.{/ts}
+          {if $is_email_receipt}
+              {ts}You will receive an email receipt for each recurring contribution. The receipts will include a link you can use if you decide to modify or cancel your future contributions.{/ts}
+          {/if}
+          </span></p>
+      </div>
+    </div>
+{/if}
+
 {if $priceSet && empty($useForMember)}
     <div id="priceset"> 
         <fieldset>
@@ -119,19 +133,6 @@ function clearAmountOther() {
 	{if $form.is_pay_later}
 	    <div class="crm-section {$form.is_pay_later.name}-section">
 			<div class="content">{$form.is_pay_later.html}&nbsp;{$form.is_pay_later.label}</div>
-	    </div>
-	{/if} 
-	{if $form.is_recur}
-	    <div class="crm-section {$form.is_recur.name}-section">
-			<div class="content">
-				<p><strong>{$form.is_recur.html} {ts}every{/ts} &nbsp;{$form.frequency_interval.html} &nbsp; {$form.frequency_unit.html}&nbsp; {ts}for{/ts} &nbsp; {$form.installments.html} &nbsp;{$form.installments.label}</strong>
-				</p>
-				<p><span class="description">{ts}Your recurring contribution will be processed automatically for the number of installments you specify. You can leave the number of installments blank if you want to make an open-ended commitment. In either case, you can choose to cancel at any time.{/ts} 
-        		{if $is_email_receipt}
-        		    {ts}You will receive an email receipt for each recurring contribution. The receipts will include a link you can use if you decide to modify or cancel your future contributions.{/ts} 
-        		{/if}
-        		</span></p>
-		    </div>
 	    </div>
 	{/if} 
 	{if $pcpSupporterText}
