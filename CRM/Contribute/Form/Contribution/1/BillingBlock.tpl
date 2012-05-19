@@ -28,7 +28,7 @@
         <fieldset class="billing_name_address-group">
             <!-- <legend>{ts}Billing Name and Address{/ts}</legend> -->
             <div class="crm-section billing_name_address-section">
-                <div class="crm-section billingNameInfo-section">
+                <!-- <div class="crm-section billingNameInfo-section">
                     <div class="content description">
                       {if $paymentProcessor.payment_type & 2}
                          {ts}Enter the name of the account holder, and the corresponding billing address.{/ts}
@@ -36,7 +36,7 @@
                          {ts}Enter the name as shown on your credit or debit card, and the billing address for this card.{/ts}
                       {/if}
                     </div>
-                </div>
+                </div> -->
                 <div class="crm-section {$form.billing_first_name.name}-section">
                     <div class="label">{$form.billing_first_name.label}</div>
                     <div class="content">
