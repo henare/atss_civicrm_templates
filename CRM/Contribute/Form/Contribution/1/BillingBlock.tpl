@@ -25,6 +25,65 @@
 *}
 {if $form.credit_card_number or $form.bank_account_number}
     <div id="payment_information">
+        <fieldset class="billing_name_address-group">
+            <legend>{ts}Billing Name and Address{/ts}</legend>
+            <div class="crm-section billing_name_address-section">
+                <div class="crm-section billingNameInfo-section">
+                    <div class="content description">
+                      {if $paymentProcessor.payment_type & 2}
+                         {ts}Enter the name of the account holder, and the corresponding billing address.{/ts}
+                      {else}
+                         {ts}Enter the name as shown on your credit or debit card, and the billing address for this card.{/ts}
+                      {/if}
+                    </div>
+                </div>
+                <div class="crm-section {$form.billing_first_name.name}-section">
+                    <div class="label">{$form.billing_first_name.label}</div>
+                    <div class="content">{$form.billing_first_name.html}</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="crm-section {$form.billing_middle_name.name}-section">
+                    <div class="label">{$form.billing_middle_name.label}</div>
+                    <div class="content">{$form.billing_middle_name.html}</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="crm-section {$form.billing_last_name.name}-section">
+                    <div class="label">{$form.billing_last_name.label}</div>
+                    <div class="content">{$form.billing_last_name.html}</div>
+                    <div class="clear"></div>
+                </div>
+                {assign var=n value=billing_street_address-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html}</div>
+                    <div class="clear"></div>
+                </div>
+                {assign var=n value=billing_city-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html}</div>
+                    <div class="clear"></div>
+                </div>
+                {assign var=n value=billing_country_id-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html|crmReplace:class:big}</div>
+                    <div class="clear"></div>
+                </div>
+                {assign var=n value=billing_state_province_id-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html|crmReplace:class:big}</div>
+                    <div class="clear"></div>
+                </div>
+                {assign var=n value=billing_postal_code-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html}</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </fieldset>
         <fieldset class="billing_mode-group {if $paymentProcessor.payment_type & 2}direct_debit_info-group{else}credit_card_info-group{/if}">
             <legend>
                {if $paymentProcessor.payment_type & 2}
@@ -99,66 +158,6 @@
                 		</div>
                     {/if}
                 </div>
-                </fieldset>
-
-                <fieldset class="billing_name_address-group">
-                	<legend>{ts}Billing Name and Address{/ts}</legend>
-                    <div class="crm-section billing_name_address-section">
-                        <div class="crm-section billingNameInfo-section">	
-                        	<div class="content description">
-                        	  {if $paymentProcessor.payment_type & 2}
-                        	     {ts}Enter the name of the account holder, and the corresponding billing address.{/ts}
-                        	  {else}
-                        	     {ts}Enter the name as shown on your credit or debit card, and the billing address for this card.{/ts}
-                        	  {/if}
-                        	</div>
-                        </div>
-                        <div class="crm-section {$form.billing_first_name.name}-section">	
-							<div class="label">{$form.billing_first_name.label}</div>
-                            <div class="content">{$form.billing_first_name.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        <div class="crm-section {$form.billing_middle_name.name}-section">	
-							<div class="label">{$form.billing_middle_name.label}</div>
-                            <div class="content">{$form.billing_middle_name.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        <div class="crm-section {$form.billing_last_name.name}-section">	
-							<div class="label">{$form.billing_last_name.label}</div>
-                            <div class="content">{$form.billing_last_name.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        {assign var=n value=billing_street_address-$bltID}
-                        <div class="crm-section {$form.$n.name}-section">	
-							<div class="label">{$form.$n.label}</div>
-                            <div class="content">{$form.$n.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        {assign var=n value=billing_city-$bltID}
-                        <div class="crm-section {$form.$n.name}-section">	
-							<div class="label">{$form.$n.label}</div>
-                            <div class="content">{$form.$n.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        {assign var=n value=billing_country_id-$bltID}
-                        <div class="crm-section {$form.$n.name}-section">	
-							<div class="label">{$form.$n.label}</div>
-                            <div class="content">{$form.$n.html|crmReplace:class:big}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        {assign var=n value=billing_state_province_id-$bltID}
-                        <div class="crm-section {$form.$n.name}-section">	
-							<div class="label">{$form.$n.label}</div>
-                            <div class="content">{$form.$n.html|crmReplace:class:big}</div>
-                            <div class="clear"></div> 
-                        </div>
-                        {assign var=n value=billing_postal_code-$bltID}
-                        <div class="crm-section {$form.$n.name}-section">	
-							<div class="label">{$form.$n.label}</div>
-                            <div class="content">{$form.$n.html}</div>
-                            <div class="clear"></div> 
-                        </div>
-                    </div>
                 </fieldset>
             {else}
                 </fieldset>
