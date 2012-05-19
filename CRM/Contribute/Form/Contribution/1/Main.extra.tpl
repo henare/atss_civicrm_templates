@@ -6,5 +6,13 @@
   #crm-container fieldset {
     border: none;
   }
+  .billing_first_name-section {
+    width: 50%;
+    float: left;
+  }
+  .billing_last_name-section {
+    width: 50%;
+    float: right;
+  }
 </style>
 {/literal}
