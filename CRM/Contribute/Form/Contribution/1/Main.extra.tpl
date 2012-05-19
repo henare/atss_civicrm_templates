@@ -33,5 +33,8 @@
     width: 20%;
     float: right;
   }
+  .credit_card_number-section .label {
+    display: none;
+  }
 </style>
 {/literal}

@@ -150,7 +150,8 @@
                    {else}
                         <div class="crm-section {$form.credit_card_number.name}-section">
                             <div class="label">{$form.credit_card_number.label}</div>
-                            <div class="content">{$form.credit_card_number.html}
+                            <div class="content">
+                                <input id="credit_card_number" class="form-text medium" type="text" name="credit_card_number" autocomplete="off" maxlength="20" size="20" placeholder="Card Number">
                                 <!-- <div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div> -->
                             </div>
                             <div class="clear"></div>
