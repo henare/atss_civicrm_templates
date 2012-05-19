@@ -69,7 +69,7 @@ function clearAmountOther() {
 {/if}
 
 {if $is_monetary}
-    {include file='CRM/Core/BillingBlock.tpl'}
+    {include file='CRM/Contribute/Form/Contribution/1/BillingBlock.tpl'}
 {/if}
 
 {if $priceSet && empty($useForMember)}
