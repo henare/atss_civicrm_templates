@@ -148,16 +148,16 @@
                             <div class="clear"></div> 
                         </div>
                    {else}
+                        <div class="crm-section {$form.credit_card_number.name}-section">
+                            <div class="label">{$form.credit_card_number.label}</div>
+                            <div class="content">{$form.credit_card_number.html}
+                                <div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
                 		<div class="crm-section {$form.credit_card_type.name}-section">	
 							<div class="label">{$form.credit_card_type.label}</div>
                 			<div class="content">{$form.credit_card_type.html}</div>
-                			<div class="clear"></div> 
-                		</div>
-                		<div class="crm-section {$form.credit_card_number.name}-section">	
-							<div class="label">{$form.credit_card_number.label}</div>
-                			<div class="content">{$form.credit_card_number.html}
-                				<div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div>
-                			</div>
                 			<div class="clear"></div> 
                 		</div>
                 		<div class="crm-section {$form.cvv2.name}-section">	
