@@ -151,7 +151,7 @@
                         <div class="crm-section {$form.credit_card_number.name}-section">
                             <div class="label">{$form.credit_card_number.label}</div>
                             <div class="content">{$form.credit_card_number.html}
-                                <div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div>
+                                <!-- <div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div> -->
                             </div>
                             <div class="clear"></div>
                         </div>
