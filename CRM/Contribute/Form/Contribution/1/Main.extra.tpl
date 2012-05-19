@@ -7,11 +7,11 @@
     border: none;
   }
   .billing_first_name-section {
-    width: 50%;
+    width: 45%;
     float: left;
   }
   .billing_last_name-section {
-    width: 50%;
+    width: 45%;
     float: right;
   }
   #crm-container .crm-section .content, .crm-section .content {
