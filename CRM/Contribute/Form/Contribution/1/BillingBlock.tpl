@@ -56,6 +56,14 @@
                     </div>
                     <div class="clear"></div>
                 </div>
+                {assign var=n value=email-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">foo{$form.$n.label}</div>
+                    <div class="content">
+                        {$form.$n.html}
+                    </div>
+                    <div class="clear"></div>
+                </div>
                 {assign var=n value=billing_street_address-$bltID}
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>

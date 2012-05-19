@@ -139,15 +139,7 @@ function clearAmountOther() {
 			<div class="content">{$pcpSupporterText}</div>
 	    </div>
 	{/if}
-	    {assign var=n value=email-$bltID}
-	    <div class="crm-section {$form.$n.name}-section">
-	    	<div class="label">{$form.$n.label}</div>
-	    	<div class="content">
-	    		{$form.$n.html}
-	    	</div>
-	    	<div class="clear"></div> 
-	    </div>
-	
+
 	{if $form.is_for_organization}
 		<div class="crm-section {$form.is_for_organization.name}-section">
 	    	<div class="content">
