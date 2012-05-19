@@ -61,5 +61,11 @@
     width: auto;
     padding-right: 5px;
   }
+  #frequency_unit {
+    display: none;
+  }
+  #installments {
+    display: none;
+  }
 </style>
 {/literal}
