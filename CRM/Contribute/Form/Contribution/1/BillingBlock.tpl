@@ -76,7 +76,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="City">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Suburb">
                     </div>
                     <div class="clear"></div>
                 </div>
