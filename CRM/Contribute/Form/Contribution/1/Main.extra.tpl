@@ -67,5 +67,8 @@
   #installments {
     display: none;
   }
+  .amount-section .label {
+    display: none;
+  }
 </style>
 {/literal}
