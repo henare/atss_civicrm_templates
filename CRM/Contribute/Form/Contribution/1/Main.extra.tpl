@@ -36,5 +36,8 @@
   .credit_card_number-section .label {
     display: none;
   }
+  #crm-container .medium {
+    width: 100%;
+  }
 </style>
 {/literal}
