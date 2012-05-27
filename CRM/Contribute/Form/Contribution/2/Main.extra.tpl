@@ -9,6 +9,9 @@
     margin: 20px 0;
     border-color: #CFCEC3;
   }
+  #membership fieldset {
+    border-width: 0px;
+  }
   .billing_first_name-section {
     width: 45%;
     float: left;
