@@ -86,6 +86,10 @@ function clearAmountOther() {
     </div>
 {/if}
 
+<div class="crm-group custom_pre_profile-group">
+  {include file="CRM/UF/Form/Block.tpl" fields=$customPre}
+</div>
+
 {if $priceSet && empty($useForMember)}
     <div id="priceset"> 
         <fieldset>
@@ -202,10 +206,6 @@ function clearAmountOther() {
 		</div>
 	</fieldset>
     {/if} 
-
-    <div class="crm-group custom_pre_profile-group">
-    	{include file="CRM/UF/Form/Block.tpl" fields=$customPre} 	
-    </div>
 
     {if $pcp}
     <fieldset class="crm-group pcp-group">
