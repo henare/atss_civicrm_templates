@@ -69,7 +69,7 @@ function clearAmountOther() {
 {/if}
 
 {if $is_monetary}
-    {include file='CRM/Contribute/Form/Contribution/1/BillingBlock.tpl'}
+    {include file='CRM/Contribute/Form/Contribution/2/BillingBlock.tpl'}
 {/if}
 
 {if $form.is_recur}
