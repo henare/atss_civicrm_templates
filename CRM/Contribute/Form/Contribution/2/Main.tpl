@@ -72,20 +72,6 @@ function clearAmountOther() {
     {include file='CRM/Contribute/Form/Contribution/2/BillingBlock.tpl'}
 {/if}
 
-{if $form.is_recur}
-    <div class="crm-section {$form.is_recur.name}-section">
-    <div class="content">
-      <p>{$form.is_recur.html} {ts}every month.{/ts} &nbsp;{$form.frequency_interval.html} &nbsp; {$form.frequency_unit.html}&nbsp;{$form.installments.html}
-      </p>
-      <!-- <p><span class="description">{ts}Your recurring contribution will be processed automatically for the number of installments you specify. You can leave the number of installments blank if you want to make an open-ended commitment. In either case, you can choose to cancel at any time.{/ts}
-          {if $is_email_receipt}
-              {ts}You will receive an email receipt for each recurring contribution. The receipts will include a link you can use if you decide to modify or cancel your future contributions.{/ts}
-          {/if}
-          </span></p> -->
-      </div>
-    </div>
-{/if}
-
 <div class="crm-group custom_pre_profile-group">
   {include file="CRM/UF/Form/Block.tpl" fields=$customPre}
 </div>
@@ -114,6 +100,21 @@ function clearAmountOther() {
 			<div class="clear"></div> 
 	    </div>
 	{/if} 
+
+  {if $form.is_recur}
+      <div class="crm-section {$form.is_recur.name}-section">
+      <div class="content">
+        <p>{$form.is_recur.html} {ts}every month.{/ts} &nbsp;{$form.frequency_interval.html} &nbsp; {$form.frequency_unit.html}&nbsp;{$form.installments.html}
+        </p>
+        <!-- <p><span class="description">{ts}Your recurring contribution will be processed automatically for the number of installments you specify. You can leave the number of installments blank if you want to make an open-ended commitment. In either case, you can choose to cancel at any time.{/ts}
+            {if $is_email_receipt}
+                {ts}You will receive an email receipt for each recurring contribution. The receipts will include a link you can use if you decide to modify or cancel your future contributions.{/ts}
+            {/if}
+            </span></p> -->
+        </div>
+      </div>
+  {/if}
+
   <fieldset class="billing_mode-group {if $paymentProcessor.payment_type & 2}direct_debit_info-group{else}credit_card_info-group{/if}">
     <!-- <legend>
        {if $paymentProcessor.payment_type & 2}
