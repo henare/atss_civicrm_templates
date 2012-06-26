@@ -40,7 +40,7 @@
                 <div class="crm-section {$form.billing_first_name.name}-section">
                     <div class="label">{$form.billing_first_name.label}</div>
                     <div class="content">
-                        <input id="billing_first_name" class="form-text big" type="text" name="billing_first_name" autocomplete="off" maxlength="60" size="30" placeholder="First Name">
+                        <input id="billing_first_name" class="form-text big" type="text" value="{$form.billing_first_name.value}" name="billing_first_name" autocomplete="off" maxlength="60" size="30" placeholder="First Name">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="crm-section {$form.billing_last_name.name}-section">
                     <div class="label">{$form.billing_last_name.label}</div>
                     <div class="content">
-                        <input id="billing_last_name" class="form-text big" type="text" name="billing_last_name" autocomplete="off" maxlength="60" size="30" placeholder="Last Name">
+                        <input id="billing_last_name" class="form-text big" type="text" value="{$form.billing_last_name.value}" name="billing_last_name" autocomplete="off" maxlength="60" size="30" placeholder="Last Name">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Street Address">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Street Address">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Suburb">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Suburb">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -96,7 +96,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
                     </div>
                     <div class="clear"></div>
                 </div>

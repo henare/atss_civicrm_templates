@@ -40,7 +40,7 @@
                 <div class="crm-section {$form.billing_first_name.name}-section">
                     <div class="label">{$form.billing_first_name.label}</div>
                     <div class="content">
-                        <input id="billing_first_name" class="form-text big" type="text" name="billing_first_name" autocomplete="off" maxlength="60" size="30" placeholder="First Name">
+                        <input id="billing_first_name" class="form-text big" type="text" value="{$form.billing_first_name.value}" name="billing_first_name" autocomplete="off" maxlength="60" size="30" placeholder="First Name">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="crm-section {$form.billing_last_name.name}-section">
                     <div class="label">{$form.billing_last_name.label}</div>
                     <div class="content">
-                        <input id="billing_last_name" class="form-text big" type="text" name="billing_last_name" autocomplete="off" maxlength="60" size="30" placeholder="Last Name">
+                        <input id="billing_last_name" class="form-text big" type="text" value="{$form.billing_last_name.value}" name="billing_last_name" autocomplete="off" maxlength="60" size="30" placeholder="Last Name">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -68,7 +68,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Street Address">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Street Address">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Suburb">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Suburb">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -96,7 +96,7 @@
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
                     <div class="content">
-                        <input id="{$form.$n.name}" class="form-text big" type="text" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
+                        <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -151,7 +151,7 @@
                         <div class="crm-section {$form.credit_card_number.name}-section">
                             <div class="label">{$form.credit_card_number.label}</div>
                             <div class="content">
-                                <input id="credit_card_number" class="form-text medium" type="text" name="credit_card_number" autocomplete="off" maxlength="20" size="20" placeholder="Card Number">
+                                <input id="credit_card_number" class="form-text medium" type="text" value="{$form.credit_card_number.value}" name="credit_card_number" autocomplete="off" maxlength="20" size="20" placeholder="Card Number">
                                 <!-- <div class="description">{ts}Enter numbers only, no spaces or dashes.{/ts}</div> -->
                             </div>
                             <div class="clear"></div>
@@ -169,7 +169,7 @@
                 		<div class="crm-section {$form.cvv2.name}-section">	
 							<div class="label">{$form.cvv2.label}</div>
                 			<div class="content">
-                                <input id="cvv2" class="form-text" type="text" name="cvv2" autocomplete="off" maxlength="10" size="5" placeholder="CVV2">
+                                <input id="cvv2" class="form-text" type="text" value="{$form.cvv2.value}" name="cvv2" autocomplete="off" maxlength="10" size="5" placeholder="CVV2">
                                 <!--
                                 <img src="{$config->resourceBase}i/mini_cvv2.gif" alt="{ts}Security Code Location on Credit Card{/ts}" style="vertical-align: text-bottom;" />
                                 <div class="description">{ts}Usually the last 3-4 digits in the signature area on the back of the card.{/ts}</div> -->
