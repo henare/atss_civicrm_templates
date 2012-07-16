@@ -80,12 +80,6 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                {assign var=n value=billing_country_id-$bltID}
-                <div class="crm-section {$form.$n.name}-section">
-                    <div class="label">{$form.$n.label}</div>
-                    <div class="content">{$form.$n.html|crmReplace:class:big}</div>
-                    <div class="clear"></div>
-                </div>
                 {assign var=n value=billing_state_province_id-$bltID}
                 <div class="crm-section {$form.$n.name}-section">
                     <div class="label">{$form.$n.label}</div>
@@ -98,6 +92,11 @@
                     <div class="content">
                         <input id="{$form.$n.name}" class="form-text big" type="text" value="{$form.$n.value}" name="{$form.$n.name}" autocomplete="off" maxlength="60" size="30" placeholder="Post Code">
                     </div>
+                </div>
+                {assign var=n value=billing_country_id-$bltID}
+                <div class="crm-section {$form.$n.name}-section">
+                    <div class="label">{$form.$n.label}</div>
+                    <div class="content">{$form.$n.html|crmReplace:class:big}</div>
                     <div class="clear"></div>
                 </div>
             </div>
