@@ -46,16 +46,17 @@
     width: 100%;
   }
   .credit_card_type-section {
-    width: 40%;
+    width: 38%;
     float: left;
   }
   .credit_card_exp_date-section {
-    width: 40%;
+    width: 45%;
     display: inline-block;
   }
   .cvv2-section {
-    width: 20%;
+    width: 16%;
     float: right;
+    margin-left: 1%
   }
   #crm-container .crm-section .label, .crm-section .label {
     width: auto;
